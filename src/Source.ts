@@ -12,6 +12,8 @@ export enum SourceType {
 export interface SourceKind<S> {
     type: SourceType
 
+    getOr(): Option<S>
+
     set(value: Update<S>): void
 }
 

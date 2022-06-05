@@ -1,4 +1,4 @@
-export type Nullable<T> = T | undefined | null | never
+export type Nullable<T> = T | undefined | null | never | void
 
 export function identity<T>(value: T): T {
     return value
